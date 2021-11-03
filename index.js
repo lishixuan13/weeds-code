@@ -1,4 +1,5 @@
 const fg = require("fast-glob");
+const chalk = require("chalk");
 const fs = require("fs");
 const path = require("path");
 
@@ -43,7 +44,7 @@ class WeedsPlugin {
           weedsFiles,
           weedsNodeFiles,
         });
-      })
+      });
     }
   }
 
@@ -59,17 +60,26 @@ class WeedsPlugin {
   writeFile(weedsFiles) {
     fs.writeFileSync(
       path.resolve(this.options.context, "./weedsFiles.json"),
-      JSON.stringify(weedsFiles)
+      JSON.stringify(weedsFiles, null, 2)
     );
   }
 
   writeLog({ weedsFiles, weedsNodeFiles }) {
-    console.log("--- weeds-webpack-plugin：");
-    console.log("----------- 未被使用文件 -----------");
-    console.log(weedsFiles);
+    console.log(chalk.black.bgCyan("weeds-webpack-plugin："));
+    console.log("");
+    console.log(chalk.black.bgCyan("----------- 未被使用文件 -----------"));
+    console.log("");
+    weedsFiles.forEach((file) => {
+      console.log(chalk.green(file));
+    });
+    console.log("");
 
-    console.log("----------- 未被使用node模块 -----------");
-    console.log(weedsNodeFiles);
+    console.log(chalk.black.bgCyan("----------- 未被使用node模块 -----------"));
+    console.log("");
+    weedsNodeFiles.forEach((file) => {
+      console.log(chalk.cyan(file));
+    });
+    console.log("");
   }
 
   formatFiles(fileSet) {

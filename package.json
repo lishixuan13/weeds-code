@@ -1,6 +1,6 @@
 {
   "name": "weeds-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "find unused files",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "author": "13",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.2",
     "fast-glob": "^3.2.7"
   }
 }
