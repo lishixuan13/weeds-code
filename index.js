@@ -38,10 +38,12 @@ class WeedsPlugin {
         weedsNodeFiles,
       });
     } else {
-      this.writeLog({
-        weedsFiles,
-        weedsNodeFiles,
-      });
+      process.nextTick(() => {
+        this.writeLog({
+          weedsFiles,
+          weedsNodeFiles,
+        });
+      })
     }
   }
 
@@ -62,6 +64,7 @@ class WeedsPlugin {
   }
 
   writeLog({ weedsFiles, weedsNodeFiles }) {
+    console.log("--- weeds-webpack-plugin：");
     console.log("----------- 未被使用文件 -----------");
     console.log(weedsFiles);
 
