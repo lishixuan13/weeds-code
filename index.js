@@ -104,6 +104,9 @@ class WeedsPlugin {
   }
 
   apply(compiler) {
+    if (!compiler.hooks) {
+      throw new Error("weeds-webpack-plugin：请使用 webpack4及已上");
+    }
     compiler.hooks.entryOption.tap("WeedsPlugin", (context) => {
       if (!this.options.cwd) {
         this.options.cwd = context;
