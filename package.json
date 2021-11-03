@@ -1,12 +1,17 @@
 {
   "name": "weeds-webpack-plugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "find unused files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "unused",
+    "weeds",
+    "webpack",
+    "webpack plugin"
+  ],
   "author": "13",
   "license": "MIT",
   "dependencies": {
