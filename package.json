@@ -1,6 +1,6 @@
 {
   "name": "weeds-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "find unused files",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,6 @@
     "fast-glob": "^3.2.7"
   },
   "peerDependencies": {
-    "webpack": "^4.0.0"
+    "webpack": "^4.0.0 || ^5.0.0"
   }
 }
