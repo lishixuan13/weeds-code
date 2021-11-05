@@ -1,7 +1,7 @@
 {
   "name": "weeds-webpack-plugin",
-  "version": "1.0.5",
-  "description": "find unused files",
+  "version": "1.0.6",
+  "description": "找到webpack项目中未使用文件和node库",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

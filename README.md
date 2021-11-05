@@ -1,6 +1,6 @@
 # weeds-webpack-plugin
 
-> 查找 `webpack` 项目中未被使用的代码和 `node` 三方库
+> 查找 `webpack` 项目中未使用的文件和 `node` 三方库
 
 ![weeds](https://qiniu-image.qtshe.com/1635927453838_780.png)
 
