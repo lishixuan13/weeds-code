@@ -7,14 +7,14 @@
 ### Installing
 
 ```bash
-npm i weeds-webpack-plugins -D
+npm i weeds-webpack-plugin -D
 ```
 
 ### Usage
 
 ```javascript
 // webpack.config.js
-const weedsWebpackPlugin = require("weeds-webpack-plugins");
+const weedsWebpackPlugin = require("weeds-webpack-plugin");
 
 module.exports = {
   plugins: [
@@ -35,7 +35,7 @@ module.exports = {
 };
 
 // or chain-webpack
-const weedsWebpackPlugin = require("weeds-webpack-plugins");
+const weedsWebpackPlugin = require("weeds-webpack-plugin");
 
 config.plugin("weeds-webpack-plugin").use(WeedsWebpackPlugin).end();
 ```

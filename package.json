@@ -1,6 +1,6 @@
 {
   "name": "weeds-webpack-plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "找到webpack项目中未使用文件和node库",
   "main": "index.js",
   "scripts": {
